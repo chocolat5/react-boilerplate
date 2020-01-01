@@ -86,21 +86,3 @@ img {
   line-height: 0;
   vertical-align: bottom;
 }
-
-.app {
-  padding: 2.4rem 5%;
-
-  @media screen and (min-width: 900px) {
-    padding: 2.4rem calc((100% - 720px) / 2);
-  }
-}
-
-.app_header {
-  margin: 0 0 2.4rem;
-
-  h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: .05em;
-  }
-}
