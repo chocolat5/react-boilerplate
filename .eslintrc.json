@@ -6,6 +6,7 @@
   },
   "extends": [
     "eslint:recommended",
+    "plugin:jsx-a11y/recommended",
     "plugin:react/recommended"
   ],
   "globals": {
@@ -21,7 +22,8 @@
     }
   },
   "plugins": [
-    "react"
+    "react",
+    "jsx-a11y"
   ],
   "rules": {
     "semi": [2, "always"]
