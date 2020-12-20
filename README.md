@@ -11,6 +11,7 @@ boilerplate for Web Site using React
 * Hot reload
 * Webpack dev server
 * ESLint
+* Prettier
 
 
 ## Quick start
