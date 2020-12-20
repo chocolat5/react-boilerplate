@@ -3,7 +3,6 @@ const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const AutoPrefixer = require('autoprefixer');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const IS_DEV = (process.env.NODE_ENV === 'dev');
 
@@ -14,9 +13,6 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin({
-      filename: 'style.css'
-    }),
     new HtmlWebpackPlugin({
       template: './index.html',
       filename: './index.html'
@@ -24,7 +20,7 @@ module.exports = {
   ],
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'docs')
+    path: path.resolve(__dirname, 'dist')
   },
   module: {
     rules: [
@@ -33,16 +29,23 @@ module.exports = {
         exclude: /(node_modules)/,
         use: {
           loader: 'babel-loader',
+          options: {
+            presets: [
+              "@babel/preset-env",
+              "@babel/preset-react"
+            ]
+          }
         }
       },
       {
         test: /\.(css|scss)$/,
         use: [
-          MiniCssExtractPlugin.loader,
+          "style-loader",
           {
             loader: 'css-loader',
             options: {
               url: false,
+              modules: true,
               sourceMap: true,
             }
           },

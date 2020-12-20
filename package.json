@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "react-boilerplate",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": "chocolat",
   "main": "src/index.js",
   "scripts": {
@@ -9,10 +9,14 @@
     "start": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "watch": "webpack --watch --config webpack.dev.js",
-    "lint": "eslint src/*.js"
+    "lint": "eslint src/*.js",
+    "buildall:format": "prettier --write './src/**/*.{jsx,js}'",
+    "buildall:build": "webpack --config webpack.prod.js",
+    "buildall": "npm-run-all buildall:*"
+
   },
   "devDependencies": {
-    "@babel/cli": "^7.7.5",
+    "@babel/cli": "^7.12.10",
     "@babel/core": "^7.7.5",
     "@babel/plugin-proposal-class-properties": "^7.7.4",
     "@babel/preset-env": "^7.7.6",
@@ -21,10 +25,10 @@
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
-    "core-js": "^3.5.0",
     "css-loader": "^3.3.0",
     "eslint": "^6.7.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.3.0",
     "eslint-plugin-react": "^7.17.0",
     "file-loader": "^4.3.0",
     "html-loader": "^0.5.5",
@@ -35,18 +39,21 @@
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^6.1.3",
     "postcss-loader": "^3.0.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "prettier": "^2.2.1",
     "sass-loader": "^7.3.1",
     "style-loader": "^0.23.1",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.9.0",
+    "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^4.2.2"
   },
   "browserslist": [
     "defaults",
     "> 1%",
     "not op_mini all"
-  ]
+  ],
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
 }
