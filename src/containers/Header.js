@@ -5,7 +5,7 @@ import styles from './Header.scss'
 
 const Header = () => {
   return (
-    <header className={styles.header}>
+    <header className="header">
       <h1>
         <img src={logo} alt="React" />
         <span>React Boilerplate</span>

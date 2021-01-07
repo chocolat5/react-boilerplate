@@ -6,10 +6,10 @@ import styles from './App.scss'
 
 const App = () => {
   return (
-    <div className={styles.app}>
+    <div className="app">
       <Header />
-      <main className={styles.main}>
-        <div className={styles.container}>
+      <main className="main">
+        <div className="container">
           <p>Hello React Application!</p>
         </div>
       </main>
