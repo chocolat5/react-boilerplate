@@ -19,7 +19,7 @@ boilerplate for Web Site using React
 1. Clone this repo
 
 ```
-git clone https://github.com/chocolat5/react-boilerplate.git <PROJECT_NAME>
+git clone git@github.com:chocolat5/react-boilerplate.git <PROJECT_NAME>
 ```
 
 2. Move to the appropriate directory
