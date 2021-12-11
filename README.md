@@ -12,6 +12,8 @@ boilerplate for Web Site using React
 * Webpack dev server
 * ESLint
 * Prettier
+* Jest
+* React Testing Library
 
 
 ## Quick start
