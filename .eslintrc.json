@@ -24,10 +24,13 @@
   },
   "plugins": [
     "react",
+    "react-hooks",
     "jsx-a11y"
   ],
   "rules": {
-    "semi": [2, "always"]
+    "semi": [2, "always"],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   },
   "settings": {
     "react": {
