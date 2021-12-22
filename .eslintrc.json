@@ -25,7 +25,8 @@
   "plugins": [
     "react",
     "react-hooks",
-    "jsx-a11y"
+    "jsx-a11y",
+    "prettier"
   ],
   "rules": {
     "semi": [2, "always"],
