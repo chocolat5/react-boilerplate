@@ -1,19 +1,18 @@
 # react-boilerplate
 
-boilerplate for Web Site using React
+boilerplate for Web Site/App using React
 
 
 ## Features
 
-* Weboack 4
+* Weboack 5
 * Babel
+* TypeScript
 * Sass(SCSS)
 * Hot reload
 * Webpack dev server
 * ESLint
 * Prettier
-* Jest
-* React Testing Library
 
 
 ## Quick start
