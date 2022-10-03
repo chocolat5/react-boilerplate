@@ -16,7 +16,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './index.html',
     }),
-    new ESLintPlugin(),
+    new ESLintPlugin()
   ],
   output: {
     filename: '[name].bundle.js',
@@ -88,7 +88,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.css', '.scss'],
+    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.css', '.scss']
   },
   target: ['web'],
 }

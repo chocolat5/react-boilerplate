@@ -12,7 +12,9 @@ const App = () => {
   )
 }
 
-createRoot(document.getElementById('app')).render(
+const domNode = document.getElementById('app')
+const root = createRoot(domNode as HTMLElement)
+root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
